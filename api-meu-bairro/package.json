@@ -1,0 +1,19 @@
+{
+  "name": "minha-comunidade-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API do projeto Minha Comunidade organizada em controller, service e repository",
+  "scripts": {
+    "start": "node src/api.js",
+    "dev": "node --watch src/api.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  }
+}

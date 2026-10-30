@@ -1,0 +1,155 @@
+.pagina-categoria {
+  max-width: 1000px;
+  margin: 55px auto;
+  padding: 0 24px 70px;
+}
+
+.voltar {
+  display: inline-block;
+  color: #087f5b;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.painel-categoria {
+  background: white;
+  border-radius: 16px;
+  padding: 42px;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+}
+
+.icone-pagina {
+  width: 66px;
+  height: 66px;
+  border-radius: 16px;
+  background: #e6f4ef;
+  color: #087f5b;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+.painel-categoria h1 {
+  font-size: 32px;
+  color: #073b4c;
+  margin-bottom: 12px;
+}
+
+.painel-categoria > p {
+  color: #52666b;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.conteudo-categoria {
+  background: #f5f8f7;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.conteudo-categoria h2 {
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: #073b4c;
+}
+
+.conteudo-categoria p {
+  line-height: 1.7;
+  color: #52666b;
+}
+
+.acao-voltar {
+  display: inline-block;
+  margin-top: 24px;
+  background: #087f5b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+
+.form-categoria {
+  margin-top: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.form-categoria label {
+  font-weight: 600;
+  color: #073b4c;
+}
+
+.form-categoria input,
+.form-categoria textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5d1;
+  border-radius: 8px;
+  font: inherit;
+  background: #fff;
+  color: #243238;
+  box-sizing: border-box;
+}
+
+.form-categoria textarea {
+  min-height: 145px;
+  resize: vertical;
+}
+
+.form-categoria input:focus,
+.form-categoria textarea:focus {
+  outline: 2px solid #087f5b;
+  outline-offset: 1px;
+}
+
+.form-categoria button {
+  justify-self: start;
+  border: 0;
+  border-radius: 8px;
+  background: #087f5b;
+  color: #fff;
+  padding: 13px 22px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-categoria button:hover {
+  background: #066849;
+}
+
+
+
+.aviso-envio {
+  display: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #e6f4ef;
+  color: #075b43;
+  line-height: 1.5;
+}
+
+.aviso-envio.visivel {
+  display: block;
+}
+
+.nota-demo {
+  font-size: 13px;
+  color: #667775;
+}
+
+
+
+@media (max-width: 700px) {
+  .painel-categoria {
+    padding: 25px;
+  }
+
+  .painel-categoria h1 {
+    font-size: 26px;
+  }
+}
