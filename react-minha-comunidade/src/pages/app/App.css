@@ -16,9 +16,9 @@
 
 .Entrar{
     text-decoration:none;
-    color:black;
+    color:#075f48;
     background-color: white;
-    border:1px solid black;
+    border:1px solid #075f48;
     border-radius: 10px;
     padding: 10px 20px;
 }
@@ -669,3 +669,34 @@ html {
     padding: 10px;
     border-radius: 10px;
 }
+
+.usuario-logado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+
+.usuario-logado i {
+    font-size: 28px;
+    color: #2e7d32;
+}
+
+.usuario-logado span {
+    font-weight: bold;
+}
+
+.botao-sair {
+    border: none;
+    background: #e53935;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-sair:hover {
+    background: #c62828;
+}
+
+
