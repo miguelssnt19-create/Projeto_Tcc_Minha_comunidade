@@ -1,3 +1,16 @@
+
+
+
+
+
+@media (max-width: 768px) {
+    .MAE {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
+
+
 .MAE {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -15,11 +28,62 @@
 
     .quadrado1 {
     width: 100%;
+    
 }
 
 .quadrado2 {
     width: 100%;
+    border-left: solid black 2px;
+
 }
+
+.imagem-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Membros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+}
+
+.Membros > div {
+    background-color: #e8f1e8;
+    border: 1px solid #c8dfc8;
+    border-radius: 15px;
+
+    padding: 25px;
+
+    text-align: center;
+    min-height: 150px;
+}
+
+.Membros h4 {
+    font-size: 20px;
+    color: #174d35;
+    margin-bottom: 10px;
+}
+
+.Membros span {
+    display: inline-block;
+    background-color: #c5e2c0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.Membros p {
+    margin-top: 12px;
+}
+
+
 
 
 

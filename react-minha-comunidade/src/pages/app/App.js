@@ -128,7 +128,7 @@ function sair() {
 
                 
 
-                <a href="#sobre" className="botao-sobre">
+                <a href="/sobre" className="botao-sobre">
                 Saiba mais
     <i className="fa-solid fa-arrow-right"></i>
                 </a>
