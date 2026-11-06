@@ -3,6 +3,8 @@ import api, { mensagemErro } from "../../services/api";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
+import Cabecalho from '../../component/cabecalho';
+
 
 export default function Problemas() {
   const [formulario, setFormulario] = useState({
@@ -49,41 +51,7 @@ export default function Problemas() {
     <div className="pag-problemas">
 
       
-      <header>
-        <div className="logo">
-          <i className="fa-solid fa-tree"></i>
-
-          <div>
-            <h2>Minha Comunidade</h2>
-          </div>
-        </div>
-
-        <nav>
-          <Link to="/">Início</Link>
-          <Link to="/problemas">Problemas</Link>
-          <Link to="/sugestoes">Sugestões</Link>
-          <Link to="/evento">Eventos</Link>
-          <Link to="/mapa">Mapa</Link>
-          <Link to="/#sobre">Sobre</Link>
-        </nav>
-
-        <div className="acoes">
-          <Link to="/entrar">
-            <button type="button">
-              Entrar
-            </button>
-          </Link>
-
-          <Link to="/cadastrar">
-            <button
-              type="button"
-              className="cadastrar"
-            >
-              Cadastrar
-            </button>
-          </Link>
-        </div>
-      </header>
+      <Cabecalho />
 
       
       <main className="pagina-categoria">

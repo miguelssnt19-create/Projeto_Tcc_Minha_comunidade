@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import api, { mensagemErro } from "../../services/api";
 import "./index.css";
+import Cabecalho from '../../component/cabecalho';
 
 function ConectarMapa({ mapaRef }) {
   const mapa = useMap();
@@ -46,20 +47,33 @@ export default function Mapa() {
 
   return (
     <div className="pag-map">
-      <header>
-        <div className="logo"><i className="fa-solid fa-tree"></i><div><h2>Minha Comunidade</h2></div></div>
-        <nav><Link to="/">Início</Link><Link to="/problemas">Problemas</Link><Link to="/sugestoes">Sugestões</Link><Link to="/evento">Eventos</Link><Link to="/mapa" className="ativo">Mapa</Link><Link to="/#sobre">Sobre</Link></nav>
-        <div className="acoes"><Link to="/entrar"><button type="button">Entrar</button></Link><Link to="/cadastrar"><button type="button" className="cadastrar">Cadastrar</button></Link></div>
-      </header>
+      <Cabecalho />
+
       <main className="pagina-categoria">
         <Link className="voltar" to="/"><i className="fa-solid fa-arrow-left"></i> Voltar para o início</Link>
+
         <section className="painel-categoria">
           <div className="icone-pagina"><i className="fa-solid fa-map-location-dot"></i></div>
+
           <h1>Mapa da Comunidade</h1>
+
           <p>Visualize problemas, sugestões e eventos com endereço reconhecido pelo mapa.</p>
+
           <div className="conteudo-categoria mapa-interativo">
-            <div className="mapa-cabecalho"><div><h2>Conheça o bairro Vila Esperança</h2><p>Arraste o mapa para explorar. Use os controles para aproximar ou afastar.</p></div>
-              <div className="controles-mapa" aria-label="Controles do mapa"><button type="button" onClick={aumentarZoom} aria-label="Aumentar zoom">＋</button><button type="button" onClick={diminuirZoom} aria-label="Diminuir zoom">−</button><button type="button" className="botao-centralizar" onClick={centralizarMapa}>Centralizar</button></div>
+
+            <div className="mapa-cabecalho">
+              
+              <div><h2>Conheça o bairro Vila Esperança</h2><p>Arraste o mapa para explorar. Use os controles para aproximar ou afastar.</p></div>
+
+              <div className="controles-mapa" aria-label="Controles do mapa">
+                <button type="button" onClick={aumentarZoom} aria-label="Aumentar zoom">＋</button>
+
+                <button type="button" onClick={diminuirZoom} aria-label="Diminuir zoom">−</button>
+
+                <button type="button" className="botao-centralizar" onClick={centralizarMapa}>Centralizar</button>
+
+              </div>
+              
             </div>
             <div className="mapa-legenda" aria-label="Legenda do mapa"><span><i className="legenda-ponto problema-ponto"></i>Problema relatado</span><span><i className="legenda-ponto melhoria-ponto"></i>Sugestão</span><span><i className="legenda-ponto local-ponto"></i>Evento</span></div>
             <div className="mapa-janela"><MapContainer center={centro} zoom={12} minZoom={4} maxZoom={19} scrollWheelZoom={true} className="mapa-real">

@@ -6,6 +6,7 @@ import Evento from './pages/eventos/index.jsx';
 import Mapa from './pages/mapa/index.jsx';
 import Problemas from './pages/problemas/index.jsx';
 import Sugestoes from './pages/sugestoes/index.jsx';
+import Sobre from './pages/sobre/index.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -20,6 +21,7 @@ export default function Router() {
             <Route path='/mapa' element={<Mapa />} />
             <Route path='/problemas' element={<Problemas />} />
             <Route path='/sugestoes' element={<Sugestoes />} />
+            <Route path='/sobre' element={<Sobre />} />
             
         </Routes>  
     </BrowserRouter>
