@@ -23,7 +23,7 @@ function sair() {
 
     return(
         <div>
-            <header>
+            <header className='header-ca'>
         <div className="logo">
             <i className="fa-solid fa-tree"></i>
 

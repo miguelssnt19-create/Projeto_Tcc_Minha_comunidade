@@ -1,5 +1,5 @@
 
-header {
+.header-ca {
     height: 82px;
     background: white;
 
@@ -14,6 +14,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    
+    border-bottom: solid black 1px;
 }
 
 .logo {
@@ -37,4 +39,10 @@ header {
     color: #555;
     margin-top: 3px;
 }
+
+
+
+
+
+
 

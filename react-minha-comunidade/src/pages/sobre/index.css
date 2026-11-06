@@ -32,9 +32,34 @@
 }
 
 .quadrado2 {
-    width: 100%;
-    border-left: solid black 2px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
+.Nume1, .Nume2, .Nume3, .Nume4 {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+    background-color: #f0f7f0;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 110px;
+}
+
+.Nume1 i, .Nume2 i, .Nume3 i, .Nume4 i {
+    grid-row: 1 / 3;
+    font-size: 28px;
+    color: #34834a;
+}
+
+.Nume1 h4, .Nume2 h4, .Nume3 h4, .Nume4 h4 {
+    margin: 0 0 5px;
+}
+
+.Nume1 p, .Nume2 p, .Nume3 p, .Nume4 p {
+    margin: 0;
+    font-size: 14px;
 }
 
 .imagem-texto {
@@ -56,7 +81,7 @@
 
 .Membros > div {
     background-color: #e8f1e8;
-    border: 1px solid #c8dfc8;
+    border: 1px solid black;
     border-radius: 15px;
 
     padding: 25px;
@@ -84,6 +109,39 @@
 }
 
 
+@media (max-width: 768px) {
+    .Membros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .Membros {
+        grid-template-columns: 1fr;
+    }
+}
+
+.Suporte{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sup3 a{
+    background-color: #174d35;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+
+@media (max-width: 600px) {
+    .quadrado2 {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 

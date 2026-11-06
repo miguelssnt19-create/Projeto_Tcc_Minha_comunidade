@@ -28,6 +28,7 @@ export default function Sobre(){
             <div className='quadrado2'>
                             
                         <div className='Nume1'>
+                        <i className="fa-solid fa-triangle-exclamation"></i>
                         <h4>Denuncie problemas</h4>
                         <p>Ajude a resolver os problemas do seu bairro.</p>
                         </div>
@@ -35,6 +36,7 @@ export default function Sobre(){
                         <br />
 
                         <div className='Nume2'>
+                        <i className="fa-solid fa-lightbulb"></i>
                         <h4>Envie sugestões</h4>
                         <p>Compartilhe ideias para melhorar sua comunidade.</p>
                         </div>
@@ -42,6 +44,7 @@ export default function Sobre(){
                         <br />
 
                         <div className='Nume3'>
+                        <i className="fa-solid fa-calendar-days"></i>
                         <h4>Acompanhe eventos</h4>
                         <p>Fique por dentro do que acontece no seu bairro.</p>
                         </div>
@@ -49,6 +52,7 @@ export default function Sobre(){
                         <br />
 
                         <div className='Nume4'>
+                        <i className="fa-solid fa-map-location-dot"></i>
                         <h4>Veja no mapa</h4>
                         <p>Encontre seu bairro e conheça a região.</p>
                         </div>
@@ -58,56 +62,89 @@ export default function Sobre(){
         </div>
 
 
-        <div className='titulo'>
-        <h2>Nossa Equipe</h2>
-        <p>Conheça os criadores por trás do Minha Comunidade:</p>
+
+<div className='titulo'>
+    <h2>Nossa Equipe</h2>
+    <p>Conheça os criadores por trás do Minha Comunidade:</p>
+</div>
+
+
+<section className='Membros'>
+
+    <div className='Miguel'>
+        <h4>Miguel Souza</h4>
+        <span>Desenvolvedor back-end</span>
+        <p>Responsável pelo funcionamento da API.</p>
+    </div>
+
+    <div className='Samuel'>
+        <h4>Samuel Nogueira</h4>
+        <span>Desenvolvedor back-end</span>
+        <p>Auxiliar de desenvolvimento da API.</p>
+    </div>
+
+    <div className='Murillo'>
+        <h4>Murillo Monteiro</h4>
+        <span>Desenvolvedor front-end</span>
+        <p>Responsável pelo front-end.</p>
+    </div>
+
+    <div className='arthur'>
+        <h4>Arthur Reimberg</h4>
+        <span>Desenvolvedor front-end</span>
+        <p>Auxiliar de desenvolvimento do front-end.</p>
+    </div>
+
+    <div className='Eduardo'>
+        <h4>Eduardo Costa</h4>
+        <span>Banco de dados</span>
+        <p>Responsável pelo banco de dados.</p>
+    </div>
+
+    <div className='Pietro'>
+        <h4>Pietro Moraes</h4>
+        <span>Banco de dados</span>
+        <p>Auxiliar de banco de dados.</p>
+    </div>
+
+</section>
+
+
+<section className='Suporte'>
+        <div className='sup1'>
+        <img src="" alt="" />
         </div>
 
-        <header className='Membros'>
-
-        <div className='Miguel'>
-            <h4>Miguel souza</h4>
-            <img src="" alt="" />
-            <span>Desenvolvedor back end</span>
-            <p>responsavel pelo funcionamento da api</p>
+        <div className='sup2'>
+        <h2>Precisa de ajuda?</h2>
+        <p>Encontrou algum problema ao utilizar nossa plataforma?</p>
+        <p>Entre em contato com nossa equipe de suporte. Estamos aqui para ajudar!</p>
         </div>
 
-        <div className='Samuel'>
-            <h4>Samuel Silva</h4>
-            <img src="" alt="" />
-            <span>Desenvolvedor back end</span>
-            <p>auxiliar de desenvolvimento da api</p>
-        </div>
-
-        <div className='Murillo'>
-            <h4>Murillo Oliveira</h4>
-            <span>desenvolvedor front end</span>
-            <p>responsavel pela frontend</p>
-        </div>
-
-        <div className='arthur'>
-            <h4>Arthur Mendes</h4>
-            <span>Desenvolvedor frontend</span>
-            <p>auxiliar de desenvolvimento da frontend</p>
-        </div>
+            <div className='sup3'>
+            <a className='Link' href="mailto:miguelssnt19@gmail.com"> <i className='fa-solid fa-envelope'></i>
+            Falar com o suporte
+            </a>
+            </div>
+</section>
 
 
-        <div className='Eduardo'>
-            <h4>Eduardo Costa</h4>
-            <span>Banco de dados</span>
-            <p>responsavel pelo banco de dados</p>
-        </div>
+<footer>
+    <strong>Minha Comunidade</strong>
+    <span>|</span>
+    <span>Juntos por um bairro melhor!</span>
 
-        <div className='Pietro'>
-            <h4>Pietro Santos</h4>
-            <span>Banco de dados</span>
-            <p>auxiliar de banco de dados</p>
-        </div>
-
-        </header>
+    <div className="redes">
+                  <a href="https://www.facebook.com/?locale=pt_BR" className="face"><i className="fa-brands fa-facebook"></i></a>
 
 
+            <a href="https://www.instagram.com/" className="inst"><i className="fa-brands fa-instagram"></i></a>
 
+
+            
+            <a href="https://www.youtube.com/" className="you"><i className="fa-brands fa-youtube"></i></a>
+    </div>
+</footer>  
 
         </div>
     )
