@@ -1,5 +1,7 @@
 
-
+.titulo{
+    text-align: justify;
+}
 
 
 
@@ -21,8 +23,6 @@
 
     margin: 40px auto;
     align-items: center;
-
-
 
 }
 
@@ -63,9 +63,23 @@
 }
 
 .imagem-texto {
+    background-image:
+        linear-gradient(rgba(0, 40, 20, 0.60), rgba(0, 40, 20, 0.60)),
+        url('');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 180px;
+    padding: 40px;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
+
+    color: white;
 }
 
 .Membros {

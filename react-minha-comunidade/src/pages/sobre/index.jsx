@@ -10,10 +10,10 @@ export default function Sobre(){
             <Cabecalho />
 
 
-            <header className='imagem-texto'>
-            <h1>Sobre Nós</h1>
-            <p>Conheça mais sobre o Minha Comunidade, nosso propósito e quem faz parte deste projeto!</p>
-            </header>
+            <section className='imagem-texto'>
+    <h1>Sobre Nós</h1>
+    <p>Conheça mais sobre o Minha Comunidade, nosso propósito e quem faz parte deste projeto!</p>
+    </section>
 
 
         <div className='MAE'>
