@@ -1,6 +1,7 @@
 
-.titulo{
-    text-align: justify;
+.Titulo{
+    text-align: center;
+
 }
 
 
@@ -10,6 +11,10 @@
         grid-template-columns: 1fr;
         width: 90%;
     }
+}
+
+.titulos{
+    color: #08643A;
 }
 
 
@@ -26,9 +31,34 @@
 
 }
 
-    .quadrado1 {
+.quadrado1 {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: #e8f4e8;
+    padding: 25px;
+    border-radius: 20px;
     width: 100%;
-    
+}
+
+.quadrado1 i {
+    grid-row: 1 / 3;
+    font-size: 110px;
+    color: #34834a;
+    text-align: center;
+}
+
+.quadrado1 h3 {
+    margin: 0 0 10px;
+}
+
+.quadrado1 p {
+    margin: 0;
+}
+
+.quadrado1 h3{
+    color: #08643A;
 }
 
 .quadrado2 {
@@ -64,8 +94,14 @@
 
 .imagem-texto {
     background-image:
-        linear-gradient(rgba(0, 40, 20, 0.60), rgba(0, 40, 20, 0.60)),
-        url('');
+        linear-gradient(
+            to right,
+            rgba(0, 60, 35, 0.95) 0%,
+            rgba(0, 60, 35, 0.75) 35%,
+            rgba(0, 60, 35, 0.25) 65%,
+            transparent 100%
+        ),
+        url('/public/assets/images/foto_bairro.webp');
 
     background-size: cover;
     background-position: center;
@@ -81,6 +117,13 @@
 
     color: white;
 }
+
+.imagem-texto h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
 
 .Membros {
     display: grid;
@@ -156,6 +199,35 @@
         grid-template-columns: 1fr;
     }
 }
+
+.Suporte{
+    background-color: #C5E2C0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+.sup1 i{
+    color: #34834A;
+    font-size: 50px;
+}
+
+
+
+
+.Membros img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+
 
 
 

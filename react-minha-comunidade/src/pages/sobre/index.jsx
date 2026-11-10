@@ -19,17 +19,20 @@ export default function Sobre(){
         <div className='MAE'>
     
             <div className='quadrado1'>
-                    <h3>Conheça o Minha Comunidade</h3>
+    <i className="fa-solid fa-tree"></i>
 
-                    <p>O Minha Comunidade é uma plataforma criada para aproximar os moradores de seus bairros, permitindo que denunciem problemas, enviem sugestões, acompanhem eventos e contribuam para uma comunidade melhor.</p>
+    <h3>Conheça o Minha Comunidade</h3>
 
-            </div>
+    <p>
+        O Minha Comunidade é uma plataforma criada para aproximar os moradores de seus bairros, permitindo que denunciem problemas, enviem sugestões, acompanhem eventos e contribuam para uma comunidade melhor.
+    </p>
+</div>
     
             <div className='quadrado2'>
                             
                         <div className='Nume1'>
                         <i className="fa-solid fa-triangle-exclamation"></i>
-                        <h4>Denuncie problemas</h4>
+                        <h4 className='titulos'>Denuncie problemas</h4>
                         <p>Ajude a resolver os problemas do seu bairro.</p>
                         </div>
                         
@@ -37,7 +40,7 @@ export default function Sobre(){
 
                         <div className='Nume2'>
                         <i className="fa-solid fa-lightbulb"></i>
-                        <h4>Envie sugestões</h4>
+                        <h4 className='titulos'>Envie sugestões</h4>
                         <p>Compartilhe ideias para melhorar sua comunidade.</p>
                         </div>
 
@@ -45,7 +48,7 @@ export default function Sobre(){
 
                         <div className='Nume3'>
                         <i className="fa-solid fa-calendar-days"></i>
-                        <h4>Acompanhe eventos</h4>
+                        <h4 className='titulos'>Acompanhe eventos</h4>
                         <p>Fique por dentro do que acontece no seu bairro.</p>
                         </div>
 
@@ -53,7 +56,7 @@ export default function Sobre(){
 
                         <div className='Nume4'>
                         <i className="fa-solid fa-map-location-dot"></i>
-                        <h4>Veja no mapa</h4>
+                        <h4 className='titulos'>Veja no mapa</h4>
                         <p>Encontre seu bairro e conheça a região.</p>
                         </div>
 
@@ -63,8 +66,8 @@ export default function Sobre(){
 
 
 
-<div className='titulo'>
-    <h2>Nossa Equipe</h2>
+<div className='Titulo'>
+    <h2 className='titulos'>Nossa Equipe</h2>
     <p>Conheça os criadores por trás do Minha Comunidade:</p>
 </div>
 
@@ -72,36 +75,42 @@ export default function Sobre(){
 <section className='Membros'>
 
     <div className='Miguel'>
+        <img src="" alt="" />
         <h4>Miguel Souza</h4>
         <span>Desenvolvedor back-end</span>
         <p>Responsável pelo funcionamento da API.</p>
     </div>
 
     <div className='Samuel'>
+        <img src="" alt="" />
         <h4>Samuel Nogueira</h4>
         <span>Desenvolvedor back-end</span>
         <p>Auxiliar de desenvolvimento da API.</p>
     </div>
 
     <div className='Murillo'>
+        <img className='imagem_muri' src="./assets/images/murillo_terno.webp" alt="murillo" />
         <h4>Murillo Monteiro</h4>
         <span>Desenvolvedor front-end</span>
         <p>Responsável pelo front-end.</p>
     </div>
 
     <div className='arthur'>
+        <img src="" alt="" />
         <h4>Arthur Reimberg</h4>
         <span>Desenvolvedor front-end</span>
         <p>Auxiliar de desenvolvimento do front-end.</p>
     </div>
 
     <div className='Eduardo'>
+        <img src="" alt="" />
         <h4>Eduardo Costa</h4>
         <span>Banco de dados</span>
         <p>Responsável pelo banco de dados.</p>
     </div>
 
     <div className='Pietro'>
+        <img src="" alt="" />
         <h4>Pietro Moraes</h4>
         <span>Banco de dados</span>
         <p>Auxiliar de banco de dados.</p>
@@ -112,7 +121,7 @@ export default function Sobre(){
 
 <section className='Suporte'>
         <div className='sup1'>
-        <img src="" alt="" />
+        <i class="fa-solid fa-headphones"></i>
         </div>
 
         <div className='sup2'>
