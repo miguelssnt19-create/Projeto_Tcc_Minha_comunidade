@@ -75,7 +75,7 @@ export default function Sobre(){
 <section className='Membros'>
 
     <div className='Miguel'>
-        <img src="" alt="" />
+        <img src="./assets/images/miguel_terno.png" alt="miguel" />
         <h4>Miguel Souza</h4>
         <span>Desenvolvedor back-end</span>
         <p>Responsável pelo funcionamento da API.</p>
