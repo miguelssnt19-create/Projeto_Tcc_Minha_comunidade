@@ -17,6 +17,10 @@
   border-radius: 16px;
   padding: 42px;
   box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #E84B4B;
+  border-bottom: 4px solid #E84B4B;
+  border-left: 4px solid #E84B4B;
+  border-right: 4px solid #E84B4B;
 }
 
 .icone-pagina {
@@ -24,7 +28,7 @@
   height: 66px;
   border-radius: 16px;
   background: #e6f4ef;
-  color: #087f5b;
+  color: #E84B4B;
   display: grid;
   place-items: center;
   font-size: 28px;

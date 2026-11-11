@@ -1,53 +1,197 @@
 
-.form-categoria {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
+
+
+.site_evento .pagina-categoria {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 0 24px 70px;
 }
 
-.form-categoria label {
-  font-weight: bold;
-  color: #073b4c;
+
+
+.site_evento .voltar {
+    display: inline-block;
+    color: #087f5b;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 28px;
 }
 
-.form-categoria input,
-.form-categoria textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccd9d4;
-  border-radius: 8px;
-  font-size: 15px;
-  font-family: inherit;
-  box-sizing: border-box;
+.site_evento .voltar:hover {
+    color: #066849;
 }
 
-.form-categoria textarea {
-  min-height: 120px;
-  resize: vertical;
+
+
+.site_evento .painel-categoria {
+    background: white;
+    border-radius: 16px;
+    padding: 42px;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+    border: 4px solid #2389D7;
 }
 
-.form-categoria button {
-  background: #087f5b;
-  color: white;
-  padding: 13px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
+
+
+.site_evento .icone-pagina {
+    width: 66px;
+    height: 66px;
+    border-radius: 16px;
+    background: #e6f4ef;
+    color: #2389D7;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    margin-bottom: 22px;
 }
 
-.form-categoria button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+
+
+.site_evento .painel-categoria h1 {
+    font-size: 32px;
+    color: #073b4c;
+    margin-bottom: 12px;
 }
 
-.nota-demo {
-  font-size: 13px;
-  margin-top: 5px;
+.site_evento .painel-categoria > p {
+    color: #52666b;
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
 
-.aviso-envio {
-  color: #087f5b;
-  font-weight: bold;
+.site_evento .conteudo-categoria h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #073b4c;
+}
+
+
+
+.site_evento .conteudo-categoria {
+    background: #f5f8f7;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+
+
+.site_evento .form-categoria {
+    margin-top: 22px;
+    display: grid;
+    gap: 10px;
+}
+
+.site_evento .form-categoria label {
+    font-weight: 600;
+    color: #073b4c;
+}
+
+.site_evento .form-categoria input,
+.site_evento .form-categoria textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5d1;
+    border-radius: 8px;
+    font: inherit;
+    background: white;
+    color: #243238;
+    box-sizing: border-box;
+}
+
+.site_evento .form-categoria textarea {
+    min-height: 145px;
+    resize: vertical;
+}
+
+.site_evento .form-categoria input:focus,
+.site_evento .form-categoria textarea:focus {
+    outline: 2px solid #087f5b;
+    outline-offset: 1px;
+}
+
+
+
+.site_evento .form-categoria button {
+    justify-self: start;
+    border: none;
+    border-radius: 8px;
+    background: #087f5b;
+    color: white;
+    padding: 13px 22px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.site_evento .form-categoria button:hover {
+    background: #066849;
+}
+
+.site_evento .form-categoria button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+.site_evento .aviso-envio {
+    color: #087f5b;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+
+.site_evento .nota-demo {
+    font-size: 13px;
+    color: #667775;
+}
+
+
+
+.site_evento .conteudo-categoria article {
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 14px;
+    border: 1px solid #dce7e2;
+}
+
+.site_evento .conteudo-categoria article h3 {
+    color: #073b4c;
+    margin-bottom: 8px;
+}
+
+.site_evento .conteudo-categoria article p {
+    color: #52666b;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+
+
+.site_evento .acao-voltar {
+    display: inline-block;
+    margin-top: 24px;
+    background: #087f5b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.site_evento .acao-voltar:hover {
+    background: #066849;
+}
+
+
+
+@media (max-width: 700px) {
+    .site_evento .painel-categoria {
+        padding: 25px;
+    }
+
+    .site_evento .painel-categoria h1 {
+        font-size: 26px;
+    }
 }

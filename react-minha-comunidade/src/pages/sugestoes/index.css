@@ -1,0 +1,179 @@
+
+/* Página de sugestões */
+
+.pag-sugestoes .pagina-categoria {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 0 24px 70px;
+}
+
+/* Botão voltar */
+
+.pag-sugestoes .voltar {
+    display: inline-block;
+    color: #087f5b;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.pag-sugestoes .voltar:hover {
+    color: #066849;
+}
+
+/* Painel principal */
+
+.pag-sugestoes .painel-categoria {
+    background: white;
+    border-radius: 16px;
+    padding: 42px;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+    border: 4px solid #087f5b;
+}
+
+/* Ícone da página */
+
+.pag-sugestoes .icone-pagina {
+    width: 66px;
+    height: 66px;
+    border-radius: 16px;
+    background: #e6f4ef;
+    color: #087f5b;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+/* Título e descrição */
+
+.pag-sugestoes .painel-categoria h1 {
+    font-size: 32px;
+    color: #073b4c;
+    margin-bottom: 12px;
+}
+
+.pag-sugestoes .painel-categoria > p {
+    color: #52666b;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Área do formulário */
+
+.pag-sugestoes .conteudo-categoria {
+    background: #f5f8f7;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.pag-sugestoes .form-categoria {
+    margin-top: 22px;
+    display: grid;
+    gap: 10px;
+}
+
+/* Campos */
+
+.pag-sugestoes .form-categoria label {
+    font-weight: 600;
+    color: #073b4c;
+}
+
+.pag-sugestoes .form-categoria input,
+.pag-sugestoes .form-categoria textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5d1;
+    border-radius: 8px;
+    font: inherit;
+    background: #fff;
+    color: #243238;
+    box-sizing: border-box;
+}
+
+.pag-sugestoes .form-categoria textarea {
+    min-height: 145px;
+    resize: vertical;
+}
+
+/* Efeito ao clicar nos campos */
+
+.pag-sugestoes .form-categoria input:focus,
+.pag-sugestoes .form-categoria textarea:focus {
+    outline: 2px solid #087f5b;
+    outline-offset: 1px;
+}
+
+/* Botão enviar */
+
+.pag-sugestoes .form-categoria button {
+    justify-self: start;
+    border: 0;
+    border-radius: 8px;
+    background: #087f5b;
+    color: #fff;
+    padding: 13px 22px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pag-sugestoes .form-categoria button:hover {
+    background: #066849;
+}
+
+.pag-sugestoes .form-categoria button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Mensagem de envio */
+
+.pag-sugestoes .aviso-envio {
+    display: none;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #e6f4ef;
+    color: #075b43;
+    line-height: 1.5;
+}
+
+.pag-sugestoes .aviso-envio.visivel {
+    display: block;
+}
+
+/* Texto informativo */
+
+.pag-sugestoes .nota-demo {
+    font-size: 13px;
+    color: #667775;
+}
+
+/* Botão voltar à página inicial */
+
+.pag-sugestoes .acao-voltar {
+    display: inline-block;
+    margin-top: 24px;
+    background: #087f5b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.pag-sugestoes .acao-voltar:hover {
+    background: #066849;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+    .pag-sugestoes .painel-categoria {
+        padding: 25px;
+    }
+
+    .pag-sugestoes .painel-categoria h1 {
+        font-size: 26px;
+    }
+}

@@ -82,7 +82,7 @@ export default function Sobre(){
     </div>
 
     <div className='Samuel'>
-        <img src="" alt="" />
+        <img src="./assets/images/Samuel.webp" alt="samuel" />
         <h4>Samuel Nogueira</h4>
         <span>Desenvolvedor back-end</span>
         <p>Auxiliar de desenvolvimento da API.</p>
@@ -96,21 +96,21 @@ export default function Sobre(){
     </div>
 
     <div className='arthur'>
-        <img src="" alt="" />
+        <img src="./assets/images/arthur_terno.png" alt="arthur" />
         <h4>Arthur Reimberg</h4>
         <span>Desenvolvedor front-end</span>
         <p>Auxiliar de desenvolvimento do front-end.</p>
     </div>
 
     <div className='Eduardo'>
-        <img src="" alt="" />
+        <img src="./assets/images/eduardo_terno.png" alt="eduardo" />
         <h4>Eduardo Costa</h4>
         <span>Banco de dados</span>
         <p>Responsável pelo banco de dados.</p>
     </div>
 
     <div className='Pietro'>
-        <img src="" alt="" />
+        <img src="./assets/images/pietro_terno.png" alt="pietro" />
         <h4>Pietro Moraes</h4>
         <span>Banco de dados</span>
         <p>Auxiliar de banco de dados.</p>
