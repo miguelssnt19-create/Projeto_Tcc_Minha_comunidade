@@ -1,27 +1,10 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { Link, } from "react-router-dom";
+
 import Cabecalho from '../../component/cabecalho';
 
 function App() {
-
-    const navegar = useNavigate();
-
-const [usuario, setUsuario] = useState(() => {
-    const dados = localStorage.getItem("minhaComunidadeUsuario");
-
-    return dados ? JSON.parse(dados) : null;
-});
-
-function sair() {
-    localStorage.removeItem("minhaComunidadeToken");
-    localStorage.removeItem("minhaComunidadeUsuario");
-
-    setUsuario(null);
-    navegar("/entrar");
-}
-
 
 
   return (
