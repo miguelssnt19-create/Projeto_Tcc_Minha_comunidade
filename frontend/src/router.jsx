@@ -7,6 +7,7 @@ import Mapa from './pages/mapa/index.jsx';
 import Problemas from './pages/problemas/index.jsx';
 import Sugestoes from './pages/sugestoes/index.jsx';
 import Sobre from './pages/sobre/index.jsx';
+import Suporte from './pages/suporte/index.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -22,6 +23,7 @@ export default function Router() {
             <Route path='/problemas' element={<Problemas />} />
             <Route path='/sugestoes' element={<Sugestoes />} />
             <Route path='/sobre' element={<Sobre />} />
+            <Route path='/suporte' element={<Suporte />} />
             
         </Routes>  
     </BrowserRouter>

@@ -131,7 +131,8 @@ export default function Sobre(){
         </div>
 
             <div className='sup3'>
-            <a className='Link' href="mailto:miguelssnt19@gmail.com"> <i className='fa-solid fa-envelope'></i>
+            <a className='Link' href="/suporte">
+            <i className='fa-solid fa-headset'></i>
             Falar com o suporte
             </a>
             </div>

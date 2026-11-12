@@ -1,0 +1,143 @@
+.pagina-suporte {
+  width: min(900px, 92%);
+  margin: 45px auto 70px;
+}
+
+.suporte-voltar {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #087f5b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.suporte-voltar i {
+  margin-right: 8px;
+}
+
+.painel-suporte {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 38px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+}
+
+.suporte-icone {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  background: #e6f4ef;
+  color: #087f5b;
+  font-size: 32px;
+}
+
+.painel-suporte h1 {
+  margin: 0 0 12px;
+  color: #073b4c;
+  font-size: 30px;
+}
+
+.suporte-intro {
+  margin: 0 0 26px;
+  color: #52666b;
+  line-height: 1.7;
+}
+
+.form-suporte {
+  display: grid;
+  gap: 11px;
+}
+
+.form-suporte label {
+  margin-top: 7px;
+  color: #073b4c;
+  font-weight: 600;
+}
+
+.form-suporte input,
+.form-suporte select,
+.form-suporte textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5d1;
+  border-radius: 8px;
+  background: #fff;
+  color: #243238;
+  font: inherit;
+}
+
+.form-suporte textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-suporte input:focus,
+.form-suporte select:focus,
+.form-suporte textarea:focus {
+  outline: 2px solid #087f5b;
+  outline-offset: 1px;
+}
+
+.form-suporte button {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 12px;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #087f5b;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-suporte button:hover {
+  background: #066849;
+}
+
+.aviso-suporte {
+  margin: 4px 0 0;
+  color: #667775;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.rodape-suporte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 22px;
+  background: #174d35;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .pagina-suporte {
+    margin-top: 28px;
+  }
+
+  .painel-suporte {
+    padding: 24px 20px;
+  }
+
+  .painel-suporte h1 {
+    font-size: 25px;
+  }
+
+  .form-suporte button {
+    justify-self: stretch;
+    justify-content: center;
+  }
+}
