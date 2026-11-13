@@ -1,14 +1,9 @@
--- =====================================================================
---  Minha Comunidade (Meu Bairro) - Schema MySQL 8+
---  Uso:  mysql -u root -p < schema.sql
--- =====================================================================
+
 CREATE DATABASE IF NOT EXISTS meu_bairro
   CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE meu_bairro;
 
--- ---------------------------------------------------------------------
--- BAIRROS
--- ---------------------------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS bairros (
   id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
   nome       VARCHAR(120) NOT NULL,
@@ -19,14 +14,12 @@ CREATE TABLE IF NOT EXISTS bairros (
   UNIQUE KEY uq_bairro (nome, cidade, uf)
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------------------
--- USUARIOS  (telas: cadastrar.html / entrar.html)
--- ---------------------------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS usuarios (
   id            INT UNSIGNED NOT NULL AUTO_INCREMENT,
   nome          VARCHAR(100) NOT NULL,
   email         VARCHAR(160) NOT NULL,
-  senha_hash    VARCHAR(255) NOT NULL,                       -- bcrypt
+  senha_hash    VARCHAR(255) NOT NULL,                       
   papel         ENUM('morador','moderador','admin') NOT NULL DEFAULT 'morador',
   bairro_id     INT UNSIGNED NULL,
   criado_em     TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -36,11 +29,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
   CONSTRAINT fk_usuarios_bairro FOREIGN KEY (bairro_id) REFERENCES bairros(id) ON DELETE SET NULL
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------------------
--- PROBLEMAS  (tela: problemas.html)
--- mapa_x / mapa_y = posição no SVG do mapa (viewBox 1400x900), opcional
--- usuario_id NULL = relato anônimo (o formulário não exige login)
--- ---------------------------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS problemas (
   id            INT UNSIGNED NOT NULL AUTO_INCREMENT,
   usuario_id    INT UNSIGNED NULL,
@@ -62,9 +51,7 @@ CREATE TABLE IF NOT EXISTS problemas (
   CONSTRAINT fk_problemas_bairro  FOREIGN KEY (bairro_id)  REFERENCES bairros(id)  ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------------------
--- SUGESTOES  (tela: sugestoes.html)
--- ---------------------------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS sugestoes (
   id            INT UNSIGNED NOT NULL AUTO_INCREMENT,
   usuario_id    INT UNSIGNED NULL,
@@ -87,9 +74,7 @@ CREATE TABLE IF NOT EXISTS sugestoes (
   CONSTRAINT fk_sugestoes_bairro  FOREIGN KEY (bairro_id)  REFERENCES bairros(id)  ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------------------
--- EVENTOS  (tela: eventos.html - "Próximos eventos")
--- ---------------------------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS eventos (
   id            INT UNSIGNED NOT NULL AUTO_INCREMENT,
   usuario_id    INT UNSIGNED NULL,
@@ -110,9 +95,7 @@ CREATE TABLE IF NOT EXISTS eventos (
   CONSTRAINT ck_eventos_datas CHECK (data_fim IS NULL OR data_fim >= data_inicio)
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------------------
--- LOCAIS_IMPORTANTES  (tela: mapa.html - praça, escola, posto, mercado...)
--- ---------------------------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS locais_importantes (
   id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
   bairro_id  INT UNSIGNED NOT NULL,
@@ -127,9 +110,7 @@ CREATE TABLE IF NOT EXISTS locais_importantes (
   CONSTRAINT fk_locais_bairro FOREIGN KEY (bairro_id) REFERENCES bairros(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- =====================================================================
---  DADOS INICIAIS (iguais aos do mapa ilustrativo)
--- =====================================================================
+
 INSERT INTO bairros (id, nome, cidade, uf) VALUES (1, 'Vila Esperança', 'São Paulo', 'SP')
   ON DUPLICATE KEY UPDATE nome = VALUES(nome);
 

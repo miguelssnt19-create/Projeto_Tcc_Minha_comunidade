@@ -71,7 +71,7 @@
   color: #52666b;
 }
 
-/* Área do mapa */
+
 
 .mapa-interativo {
   padding: 24px;
@@ -120,7 +120,7 @@
   background: #e6f4ef;
 }
 
-/* Legenda */
+
 
 .mapa-legenda {
   display: flex;
@@ -156,7 +156,7 @@
   background: #2389d7;
 }
 
-/* Mapa Leaflet */
+
 
 .mapa-janela {
   position: relative;
@@ -189,7 +189,7 @@
   font-size: 12px;
 }
 
-/* Botão de voltar */
+
 
 .acao-voltar-mapa {
   display: inline-block;
@@ -206,7 +206,7 @@
   background: #075f48;
 }
 
-/* Rodapé */
+
 
 .rodape-mapa {
   background: #073b3a;
@@ -241,7 +241,7 @@
   color: red;
 }
 
-/* Responsividade */
+
 
 @media (max-width: 700px) {
   .pagina-mapa {
@@ -279,7 +279,7 @@
   }
 }
 
-/* Marcadores personalizados */
+
 
 .marcador-personalizado {
   background: transparent;
