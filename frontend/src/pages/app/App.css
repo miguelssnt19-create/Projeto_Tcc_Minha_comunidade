@@ -87,10 +87,10 @@ nav a {
     padding: 30px 0;
 }
 
-nav a:hover,
+nav a:hover, 
 nav .ativo {
     color: #087f5b;
-    border-bottom: 2px solid #087f5b;
+    
 }
 
 

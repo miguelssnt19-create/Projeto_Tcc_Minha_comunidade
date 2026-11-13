@@ -19,7 +19,8 @@
 
 
 .MAE {
-    display: grid;
+    display: flex;
+    flex-direction:column ;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 25px;
 
@@ -28,6 +29,7 @@
 
     margin: 40px auto;
     align-items: center;
+    
 
 }
 
@@ -51,6 +53,7 @@
 
 .quadrado1 h3 {
     margin: 0 0 10px;
+    font-size: 20px;
 }
 
 .quadrado1 p {
@@ -62,7 +65,7 @@
 }
 
 .quadrado2 {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
@@ -75,6 +78,7 @@
     padding: 20px;
     border-radius: 12px;
     min-height: 110px;
+    
 }
 
 .Nume1 i, .Nume2 i, .Nume3 i, .Nume4 i {
@@ -85,11 +89,13 @@
 
 .Nume1 h4, .Nume2 h4, .Nume3 h4, .Nume4 h4 {
     margin: 0 0 5px;
+    
 }
 
 .Nume1 p, .Nume2 p, .Nume3 p, .Nume4 p {
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
+    
 }
 
 .imagem-texto {
@@ -101,7 +107,7 @@
             rgba(0, 60, 35, 0.25) 65%,
             transparent 100%
         ),
-        url('/public/assets/images/foto_bairro.webp');
+        url('/public/assets/images/favela2.jpg');
 
     background-size: cover;
     background-position: center;
