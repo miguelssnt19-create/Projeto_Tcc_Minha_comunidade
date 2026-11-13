@@ -6,7 +6,7 @@ export function usuarioOpcional(req, _res, next) {
     try {
       req.usuario = jwt.verify(cabecalho.slice(7), process.env.JWT_SECRET);
     } catch {
-      // Token inválido é ignorado nas rotas públicas.
+
     }
   }
   next();

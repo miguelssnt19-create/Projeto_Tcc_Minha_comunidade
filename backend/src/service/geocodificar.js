@@ -1,5 +1,5 @@
 
-// Consulta ao Nominatim (OpenStreetMap) para converter endereço em coordenadas.
+
 export async function geocodificar(endereco) {
   const texto = String(endereco ?? "").trim();
 
